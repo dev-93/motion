@@ -4,10 +4,11 @@ import { TodoComponent } from "./components/page/item/todo.js";
 import { VideoComponent } from "./components/page/item/video.js";
 import { Composable, PageComponent, PageItemComponent } from "./components/page/page.js";
 import { Component } from "./components/component.js";
+import { InputDialog } from "./components/dialog/dialog.js";
 
 class App {
     private readonly page: Component & Composable;
-    
+
     constructor(appRoot: HTMLElement) {
         this.page = new PageComponent(PageItemComponent);
         this.page.attachTo(appRoot);
@@ -23,6 +24,21 @@ class App {
 
         const video = new VideoComponent('video Title', 'https://youtu.be/JKURpy-lVAI');
         this.page.addChild(video);
+
+        const ImageBtn = document.querySelector('#new-image')! as HTMLButtonElement;
+        ImageBtn.addEventListener('click', () => {
+            const dialog = new InputDialog();
+
+            dialog.setOnCloseListener(() => {
+                dialog.removeFrom(document.body);
+            });
+
+            dialog.setOnSubmitListener(() => {
+                dialog.removeFrom(document.body);
+            });
+
+            dialog.attachTo(document.body);
+        }); 
     }
 };
 
