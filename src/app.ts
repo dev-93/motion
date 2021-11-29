@@ -43,15 +43,15 @@ class App {
             (input: TextSectionInput) => new TodoComponent(input.title, input.body)
         );
 
-        this.page.addChild(new ImageComponent('Image Title', 'https://picsum.photos/600/300'));
-        this.page.addChild(new NoteComponent('Note Title', 'Note body'));
-        this.page.addChild(new TodoComponent('Todo Title', 'Todo body'));
-        this.page.addChild(new VideoComponent('video Title', 'https://youtu.be/JKURpy-lVAI'));
+        this.page.addChild(new ImageComponent('random image 1', 'https://picsum.photos/600/300'));
+        this.page.addChild(new NoteComponent('today note', 'work hard'));
+        this.page.addChild(new TodoComponent('i have to do today', 'work out'));
+        this.page.addChild(new VideoComponent('quiet music', 'https://youtu.be/JKURpy-lVAI'));
         
-        this.page.addChild(new ImageComponent('Image Title', 'https://picsum.photos/600/300'));
-        this.page.addChild(new NoteComponent('Note Title', 'Note body'));
-        this.page.addChild(new TodoComponent('Todo Title', 'Todo body'));
-        this.page.addChild(new VideoComponent('video Title', 'https://youtu.be/JKURpy-lVAI'));
+        this.page.addChild(new ImageComponent('random image 2', 'https://picsum.photos/300/600'));
+        this.page.addChild(new NoteComponent('today feeling', 'pretty good'));
+        this.page.addChild(new TodoComponent('i have to do today', 'love my self repeatedly'));
+        this.page.addChild(new VideoComponent('cozy music', 'https://www.youtube.com/watch?v=gKnG2WKtvgc'));
     }
 
     private bindElementToDialog<T extends (MediaData | TextData) & Component>(
