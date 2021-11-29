@@ -122,12 +122,10 @@ export class PageComponent extends BaseComponents<HTMLUListElement> implements C
 
     onDragOver(event: DragEvent) {
         event.preventDefault();
-        console.log('dragOver', event);
     }
 
     onDrop(event: DragEvent) {
         event.preventDefault();
-        console.log('drop', event);
         if(!this.dropTarget) {
             return;
         }
