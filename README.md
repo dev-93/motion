@@ -11,4 +11,4 @@
 
 github이용한 배포: https://dev-93.github.io/motion/
 
-공부내용: https://www.notion.so/taenam/8e6ea1d57866409a8c8ab1c6d2266a05
+공부내용: https://taenam.notion.site/8e6ea1d57866409a8c8ab1c6d2266a05
