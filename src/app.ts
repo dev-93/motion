@@ -48,7 +48,7 @@ class App {
         this.page.addChild(new TodoComponent('i have to do today', 'work out'));
         this.page.addChild(new VideoComponent('quiet music', 'https://youtu.be/JKURpy-lVAI'));
         
-        this.page.addChild(new ImageComponent('random image 2', 'https://picsum.photos/300/600'));
+        this.page.addChild(new ImageComponent('random image 2', 'https://picsum.photos/500/250'));
         this.page.addChild(new NoteComponent('today feeling', 'pretty good'));
         this.page.addChild(new TodoComponent('i have to do today', 'love my self repeatedly'));
         this.page.addChild(new VideoComponent('cozy music', 'https://www.youtube.com/watch?v=gKnG2WKtvgc'));
