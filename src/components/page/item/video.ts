@@ -4,10 +4,8 @@ export class VideoComponent extends BaseComponents<HTMLElement> {
     constructor(title: string, url: string) {
         super(`
             <section class="video">
-                <div class="video__player">
-                    <iframe class="video__iframe"></iframe>
-                    <h3 class="page-item__title video__title"></h3>
-                </div>
+                <div class="video__player"><iframe class="video__iframe"></iframe></div>
+                <h2 class="page-item__title video__title"></h2>
             </section>
         `);
 

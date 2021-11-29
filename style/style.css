@@ -17,10 +17,6 @@ li {
     list-style: none;
     padding-left: 0;
 }
-
-dialog {
-    border: 0;
-}
   
 p {
     color: var(--smokywhite);
@@ -29,7 +25,11 @@ p {
 label {
     color: var(--text-accent-color);
 }
-
+  
+dialog {
+    border: 0;
+}
+  
 button {
     background: transparent;
     border: 0;
@@ -98,7 +98,7 @@ body {
     border-color: var(--accent-color);
     border-radius: 2px;
 }
-  
+
 .document {
     height: 100%;
     overflow-y: auto;
@@ -125,7 +125,8 @@ body {
     border-top: 1px solid var(--border-color);
     text-align: center;
 }
-
+  
+  /* -- Dialog -- */
 .dialog {
     display: flex;
     align-items: center;
@@ -151,7 +152,7 @@ body {
     border-radius: 0.5rem;
     box-shadow: 2px 2px 20px var(--shadow-color);
 }
-
+  
 .form__container {
     display: flex;
     flex-direction: column;
@@ -234,7 +235,7 @@ body {
     height: 100%;
 }
   
-/* -- Note -- */
+  /* -- Note -- */
 .note {
     padding: 0.5em;
 }
@@ -248,13 +249,13 @@ body {
     padding: 1em;
     color: var(--smokywhite);
 }
-
-/* ---- Drag and Drop ---- */
-
+  
+  /* ---- Drag and Drop ---- */
+  
 .mute-children * {
     pointer-events: none;
 }
-
+  
 .lifted {
     animation: drag_start 250ms;
     opacity: 0.2;
